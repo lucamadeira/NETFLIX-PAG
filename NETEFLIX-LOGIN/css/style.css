@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+
+}
+body {
+    background-image: url(../img-netflix/netflix-background-50-Black-1895613833.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-size: 3rem;
+}
+.netlog{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    width: 500px;
+    height: 300px;
+    margin: 20%;
+    padding: 30px;
+}
+p{
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 10px;
+    font-size: 18px ;
+    
+}
+.email{
+    position: relative;
+    right: 10%;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.333);
+    border: 1px solid rgba(247, 247, 247, 0.333);
+    color: rgb(255, 253, 253);
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+.button{
+    position: relative;
+    left: 60%;
+    top: -100%;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(193, 17, 25);
+    border: 1px solid rgb(193, 17, 25);
+    font-size: 16px;
+    border-radius: 5px;
+}
