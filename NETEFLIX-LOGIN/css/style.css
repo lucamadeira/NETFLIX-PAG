@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+   min-height: 100vh;
 }
 h1{
     text-align: center;
@@ -23,7 +23,7 @@ h1{
     justify-content: center;  
     align-items: center;       
     min-height: 100vh;  
-  margin-top: 10%;   
+  margin-top: 20%;   
 }
 .netlog{
    
@@ -71,21 +71,184 @@ p{
     border-radius: 5px;
 
 }
+p.tam{
+    margin-top: -10px;
+    font-size: 1.5em;
+}
+p.posit{
+    margin-top: -35px;
+}
 div.popcorn {
     
     display: flex;
-    flex-flow: column;
     align-self: flex-end;
-    width: 800px;
+    min-width: 80%;
     height: 70px;
     border: 1px solid rgb(43, 32, 90);
     border-radius: 15px;
-    background: linear-gradient(90deg, rgb(64, 36, 98), rgb(43, 32, 90));
+    background: linear-gradient(90deg, rgb(47, 26, 72), rgb(34, 25, 74));
     padding: 10px;
     margin-top: 20%;
     
-    
-    
+}
+.a{
+  display: flex;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.421);
+    border: 1px solid rgba(128, 128, 128, 0.375);
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+   
 
+}
+h3{
+margin-right: 80%;
+margin-top: 50px;
+margin-bottom: 10px;
+}
+img{
+    height: 190px;
+    border-radius: 10px;
     
+}
+div.flex {
+    position: relative;
+    display: inline-block;
+}
+.top0 {
+    position: absolute;
+    bottom: 8px;   
+    left:-20px;     
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    border: 1px soli white;
+    margin: 0;
+    z-index: 2;
+}
+.top1
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;     
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+    z-index: 2;
+}
+.top2
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;     
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+    z-index: 2;
+}
+.top3
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;     
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+    z-index: 2;
+}
+.top4
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;     
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+   
+}
+.top5
+{
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;  
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+   
+}
+.top6 
+{
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;   
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+  
+}
+.top7
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px; 
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+   
+}
+.top8
+ {
+    position: absolute;
+    bottom: 8px;   
+    left: -18px;  
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+   
+}
+.top9
+ {
+    position: absolute;
+    bottom: 8px;
+    left: -18px;  
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+    margin: 0;
+  
+}
+
+div#top10{
+display: flex;
+flex-flow: row;
+overflow-x: auto;
+width: 90%;
+
+}
+div.flex{
+    border: 1pc solid black;
+   
+align-content: space-evenly;
+
 }
