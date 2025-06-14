@@ -1,8 +1,17 @@
+@font-face {
+    font-family: netflix;
+    src: url(../font/NetflixSans_W_Bd.woff2);
+}
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     color: white;
+    font-family: netflix;
+    font-weight: bolder;
+   
+   
     
 
 }
@@ -27,7 +36,7 @@ h1{
 }
 .netlog{
    
-    width: 500px;
+    width: 640px;
     height: 300px;
     padding: 30px;
 }
@@ -56,7 +65,7 @@ p{
     color: rgb(255, 253, 253);
     border-radius: 5px;
     font-size: 16px;
-    
+    `
    
 }
 .button1 {
@@ -110,7 +119,7 @@ margin-top: 50px;
 margin-bottom: 10px;
 }
 img{
-    height: 190px;
+    height: 250px;
     border-radius: 10px;
     
 }
@@ -118,11 +127,14 @@ div.flex {
     position: relative;
     display: inline-block;
 }
+.top0,.top1,.top2, .top3, .top4, .top5, .top6, .top7, .top8, .top9{
+    font-size: 100px;
+    left: -30px;
+}
 .top0 {
+
     position: absolute;
     bottom: 8px;   
-    left:-20px;     
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -134,8 +146,7 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px;     
-    font-size: 48px;
+    
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -146,8 +157,7 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px;     
-    font-size: 48px;
+   
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -158,8 +168,7 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px;     
-    font-size: 48px;
+   
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -170,8 +179,6 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px;     
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -182,8 +189,6 @@ div.flex {
 {
     position: absolute;
     bottom: 8px;   
-    left: -18px;  
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -194,8 +199,6 @@ div.flex {
 {
     position: absolute;
     bottom: 8px;   
-    left: -18px;   
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -206,8 +209,6 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px; 
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -218,8 +219,6 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;   
-    left: -18px;  
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
@@ -230,8 +229,6 @@ div.flex {
  {
     position: absolute;
     bottom: 8px;
-    left: -18px;  
-    font-size: 48px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000;
