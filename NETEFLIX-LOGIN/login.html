@@ -1,126 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon/icons8-netflix-office-m-32.png">
 
     <title>Document</title>
 </head>
-<body>
-        
-   
-       
-            <div id="funter">
 
-                <div class="netlog">
-                    <h1>Unlimited movies, TV shows, and more</h1>
-                <p class="position">Starts at EUR 6.99. Cancel anytime.</p>
-                <p>Ready to watch? Enter your email to create
-                    or restart your  membership.</p>
-                <div class="form-row">
-                    <input class="email" type="email" placeholder="Email address">
-                    <button class="button1"  >
-                        Get Started
-                        <span class="material-icons-outlined">
-                        chevron_right
+<body>
+
+    <div id="funter">
+
+        <div class="netlog">
+            <h1>Film, serie TV e tanto altro, senza limiti</h1>
+            <p style="font-size: 20px;" class="netlog-p">A partire da 6,99 €. Disdici quando vuoi.</p>
+            <p>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo </p>
+            <p style="text-align: center; margin: 0%;padding: 0%;">abbonamento.</p>
+
+            <div>
+                <input class="email" type="email" placeholder="    Indirizzo email">
+                <div class="button-container">
+                    <button class="button-log">
+                        Inizia
+                        <span style="font-size: 35px;" class="material-icons-outlined">
+                            chevron_right
                         </span>
                     </button>
                 </div>
-                
             </div>
-           
-            
-            <div class="popcorn">
-                <div>
-                    <p class="tam">The Netflix you love for just EUR 6.99. </p> <br>
-                    <p class="posit">Get our most affardable, ad-supported plan.</p>
-                    
+
+
+        </div>
+        <section class="notification-section">
+
+            <div class="notification">
+                <div class="icon">🍿</div>
+                <div class="message">
+                    <p style="font-size: 20px;">Tutto ciò che ami di Netflix a soli 6,99 €.</p>
+                    <p>Approfitta del nostro piano con pubblicità: è il più conveniente.</p>
                 </div>
-                 <a class="a" href="Learn More">Learn More</a>
+                <button class="close-btn">Scopri di più</button>
             </div>
+        </section>
+        <!--  criar 10 pagina para que quando se haga clik se abra una otra pagina o un iframe que reproduzca um trailer de cada serie  -->
+        <h3 class="titoli10p">I titoli del momento</h3>
 
-            <h3 class="top10">Trending Now</h3>
+        <div id="top10">
+            <div class="flex-img"><img src="img-top10/AAAABZWvTR6rKeYwpwMoN62DnlQuDCaKbu92fXlynesw7ATrxfXkdsoceJIxAVMGODhkzZOR5SRELo1C8uxMWsR_1YAQQeAFWIP2u7I.webp" alt="">
+                <p class="top0">1</p>
+            </div>
+            <div class="flex-img"><img src="img-top10/AAAABXPLxcwwgSNJysBcgsCdT4vAyZfKaTiCyAGLWFj9ItBrSY6i7qTIwBs5hP4FV4CLeQlMCrGGWRc4GrmKgR5VcFg7iCyQIQv6enzMGjYO6Y6n2xR-ELvttE4fmIO9CZiWI08l.webp">
+                <p class="top1">2</p>
+            </div>
+            <div class="flex-img"><img src="img-top10/AAAABZOlD8Bfr9iiVZfGZifa5o59HnImohvcgw--v0vBDDiZDVhtmbCjeNkxsN3_-Mll7ubY83jXbXIbbL4uwHQIw-Vqv-dnPRc93MlLLiXhJ_7QF40H0nDZ_CiP8lWs9zgtzxiV.webp" alt="">
+                <p class="top2">3</p>
+            </div>
+            <div class="flex-img"><img src="img-top10/AAAABXcBeLH5rQEGfi8Df7cJkfacyLEcvrJswFrT1BK-XR1LJj_vG4-7ttBz-RKQk_8P4oj-BGYdnGQlUjmCclW7nEYc65lnzvMk8l7tcQxH6bts56RD53H0_E2boRdCJos_k_Q4.webp" alt="">
+                <p class="top3">4</p>
+            </div>
+            <div class="flex-img"><img
+                    src="img-top10/AAAABeysJ_o0Fqo2Esnk8H3hp3V1VarIGpeg_GoiaL3A4_BLVb29OEEM1b17gQxKFblxZaEl42kzUG8QkRINoZ4HHxAN8N-WoN_YF_fcPYgiIiq03s81yru4DEvGn7SiPnW55-JK.webp"
+                    alt="">
+                <p class="top4">5</p>
+            </div>
+            <div class="flex-img"><img
+                    src="img-top10/AAAABfrQ-ytQxZb4vAuUegqLRC6Mzo4qEMKBNKiYSsEqK16hUyXOUO2f7CZchxO_b4lhknmpf0C2ocJMYF1jChy3YpV3M5Osq7oVADhGKdJWQyaHA50EtvmM0TdxspGTAbQQHctr.webp"
+                    alt="">
+                <p class="top5">6</p>
+            </div>
+            <div class="flex-img"><img
+                    src="img-top10/AAAABRGbPRhY1c-cAITcSRsASYuAKn8Qff0TY4sT1tsuXyL9YScIolKsmUXQcz0-Ap5fUmfNmgLv0RUEqXoLM8K0-y3QmNzSOegZ0sjg67UvW85SeE0sV-5D8dydq7BEcxam2S8n.webp"alt="">
+                <p class="top6">7</p>
+            </div>
+            <div class="flex-img"><img
+                    src="img-top10/AAAABTpMiKJ1ZsY3Npd2OLZ8o9o6DRzQeSutUSCJwG3zieBM0GehEThlmS9Dmv9a9w5T9fkSkvbOjKxkZkfGlb8iS3fJwpoC8ILlQjOzvgx8yeU0cLI02S16eePmKuNuOlMOVZRk.webp"
+                    alt="">
+                <p class="top7">8</p>
+            </div>
+            <div class="flex-img"><img src="img-top10/AAAABTrmjfuGVHjuwa7qZUf_Y3ICfFhn5niHJR8Dil-ce652caA048LEW5godOJ1KyqqfvekyzGu0tCL5Ty5r8L2xdRRUOxL9DZE-72Rkq_qqlVT2O7Ax2NKWGqnJRy9xYE60DyG.webp" alt="">
+                <p class="top8">9</p>
+            </div>
+            <div class="flex-img"><img src="img-top10/AAAABTsIHqmKvuiJaunFg-3M7eRlEBPik8Un-eqTK-od9x48LzeGITagPm82bIopTRvyhIEMehQNdXN2qfj0AVpDTMhftqYStaCieJdbO-jfhSkFUVGBs9eYkpkjdzOj_UCKZi53.webp" alt="">
+                <p class="top9">10</p>
+            </div>
+        </div>
 
-            <div id="top10">       
-                <div class="flex"><img src="img-top10/10daysofabadman.jpeg" alt="">
-                <p class="top0">1</p></div>
-                <div class="flex"><img src="img-top10/1111.jpeg" alt="">
-                <p class="top1">2</p></div>
-                <div class="flex"><img src="img-top10/14peaksnothingisimpossible.jpeg" alt="">
-                <p class="top2">3</p></div>
-                <div class="flex"><img src="img-top10/1917.jpeg" alt="">
-                <p class="top3">4</p></div>
-                <div class="flex"><img src="img-top10/AAAABeUfgeh3VH7Zi9tSX-t98Ul-a1UqyEFfnHGSPr0S7KJv8cQTmUUwo8SRTBGN54iaglAg6JKzZ6ZJXIHAr22zwWEpwPXk5XKRYswFV5ciPyBMFWi28F6u_4RD2tUTrQ.jpg" alt="">
-                <p class="top4">5</p></div>
-                <div class="flex"><img src="img-top10/AAAABSbt3JhsTM88E0-QdbiJMfbooOUzvBqcfmUpkFvdm8UfPqpGmmeTNeNtU0Vf9fHMNymoAlcVmIzZgq0jEtUk9d5LijZ-VV4qEg.jpg" alt="">
-                <p class="top5">6</p></div>
-                <div class="flex"><img src="img-top10/AAAABWhrU7MA-1ZpbsUK_KyceOQWlMew9MX0Q9IdtcISoOvRU1kFqlb1uUDZ5jGx_bHe2eEl2jnPviyEpj9PcZp5FZ3RH9Y-.jpg" alt="">
-                <p class="top6">7</p></div>
-                <div class="flex"><img src="img-top10/AAAABYn4UO23xk7W5T6vb0UuncPSrcCO-YL79KE-78dnqM3RWfh3KEa-znhubLHra85nsRXFAyrT4ECqXPuCApinCFo9XLAbtKFRVRktTn7bkpKDyj8JZVG44WuVbAwAsQ.jpg" alt="">
-                <p class="top7">8</p></div>
-                <div class="flex"><img src="img-top10/alive.jpeg" alt="">
-                <p class="top8">9</p></div>
-                <div class="flex"><img src="img-top10/ootdoutfitofthedesigner.jpeg" alt="">
-                <p class="top9">10</p></div>
+
+        <h3>More Reasons to Join</h3>
+
+        <body>
+
+
+            <section class="benefits-section">
+                <h2>Altri motivi per abbonarsi</h2>
+                <div class="cards-container">
+
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Goditi Netflix sulla tua TV</h3>
+                            <p class="card-p">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e
+                                molti altri dispositivi.</p>
+                        </div>
+                        <img src="tv-icon.svg" alt="Icona TV" class="icon">
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Scarica le tue serie da guardare offline</h3>
+                            <p class="card-p">Salva facilmente i tuoi preferiti e avrai sempre qualcosa da guardare.</p>
+                        </div>
+                        <img src="assets:icons/scarica.svg" alt="seta">
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Guarda ovunque</h3>
+                            <p class="card-p">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Crea profili per bambini</h3>
+                            <p class="card-p">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+                        </div>
+                        <img src="kids-icon.svg" alt="Icona Bambini" class="icon">
+                    </div>
+
+                </div>
+            </section>
+
+            <h3>Domande frequenti</h3>
+
+            <div class="inform">
+                <p>Cos'é Netflix?</p>
+                <div><p>Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari 
+                    pluripremiati e tanto altro su
+                     una vasta gamma di dispositivi connessi a Internet.
+                Guarda quello che vuoi, quando vuoi. Il tutto a una quota
+                 mensile ridotta. C'è sempre qualcosa di nuovo da scoprire:
+                  aggiungiamo nuovi film e serie TV ogni settimana!
+                 </p>
+                </div>
             </div>
             
+            <div class="inform">
+                <p>Quanto costa Netflix?</p>
+                <div><p>Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming,
+                     il tutto per un importo mensile fisso. Piani da 6,99 € a 19,99 € al mese.
+                     Nessun costo aggiuntivo, nessun contratto.</p>
+            </div>
+            <div class="inform">
+                <p>Dove posso guardare Netflix?</p>
+                <div>
+                    <p>
+                        Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix dal tuo 
+                        computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta l'app Netflix,
+                         come smart TV, smartphone, tablet, 
+                        lettori multimediali per streaming e console per videogiochi.
+                        Con l'app per iOS o Android puoi anche scaricare i tuoi programmi preferiti.
+                        Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza connessione a Internet.
+                         Porta Netflix sempre con te.
 
-            <h3>More Reasons to Join</h3>
-
-            <div class="items-container">
-                <div class="items">
-                    <p id="pbig">Enjoy on your TV</p>
-                    <p class="pcolor">
-                        Watch on Smart TVs,
-                        Playstation, Xbox, Chromecast,
-                        Apple TV, Blu-ray players, and more.
                     </p>
                 </div>
-                <div class="items">
-                    <p id="pbig">Download your shows to watch offline</p>
-                        <p class="pcolor">
-                            Save your favorites easily and always
-                            have something to watch.
-                        </p>
-                    </div>
-                <div class="items">
-                    <p id="pbig">Watch everywhere</p>
-                        <p class="pcolor">
-                            Stream unlimited movies and TV shows on your phone,
-                            tablet, laptop, and TV.
-                        </p>
-                    </div>
-                <div class="items">
-                    <p id="pbig">Create profiles for kids</p>
-                        <p class="pcolor">
-                            Send kids on adventures with their favorite
-                            characters in a space made
-                            just for them — free with your membership.
-                        </p>
-                    </div>
             </div>
-
-            <h3>Frequently Asked Questions</h3>
-
-            <div class="inform"><p><a href="">What is Netflix?</a></p></div>
-            <div class="inform"><p><a href="">How much does Netflix cost?</a></p></div>
-            <div class="inform"><p><a href="">Where can I Watch?</a></p></div>
-            <div class="inform"><p><a href="">How do I cancel?</a></p></div>
-            <div class="inform"> <p><a href="">Wha can I watch on Netflix?</a></p></div>
-            <div class="inform"><p><a href="">Is Netflix good for kids?</a></p></div>
+            <div class="inform">
+                <p>Come posso disdire??</p>
+                <div>
+                    <p>
+                        Netflix è flessibile. Nessun contratto fastidioso e nessun impegno. Puoi facilmente disdire il tuo contratto online con due clic. 
+                        Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.
+                    </p>
+                </div>
+            </div>
+            <div class="inform">
+                <p>Cosa posso guardare su Netflix?</p>
+                <div>
+                    <p>
+                        Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime,
+                        originali Netflix pluripremiati e tanto altro.
+                         Guarda tutto quello che vuoi, in qualsiasi momento.
+                    </p>
+                </div>
+            </div>
+            <div class="inform">
+                <p>Netflix é adatto ai bambinei?</p>
+                <div>
+                    <p>
+                        L'area Netflix Bambini, già inclusa nell'abbonamento, 
+                        offre ai genitori un maggiore controllo sui contenuti e ai più piccoli uno
+                         spazio dedicato dove guardare serie TV e film per tutta la famiglia.
+                        I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare 
+                        l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.
+                     </p>
+                </div>
+            </div>
 
             <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
             <div>
-                <input required type="email"placeholder="Email address">
+                <input required type="email" placeholder="Email address">
                 <input required type="button" placeholder="Get Started">
             </div>
             <footer>
                 <a href="#">Questions? Contact us.</a>
                 <ul>
-                    
+
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Account</a></li>
                     <li><a href="#">Investor Relations</a></li>
@@ -144,9 +238,10 @@
 
                 <p>Netflix Italy</p>
             </footer>
-        
-   
 
-   
-</body>
+
+
+
+        </body>
+
 </html>
