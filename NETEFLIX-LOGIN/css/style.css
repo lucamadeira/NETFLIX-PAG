@@ -13,9 +13,11 @@
     color: white;
     font-family: netflix;
     font-weight: bolder;
-    
    
 
+}
+html {
+    background:linear-gradient(to bottom, rgb(0, 0, 0));
 }
 
 body {
@@ -26,6 +28,7 @@ body {
     background-size: cover;
     background-position: center;
    height: 100vh;
+   
    
 }
 h1{
@@ -55,6 +58,7 @@ p{
     display: flex;
     flex-flow: column-reverse;
     padding: 10px;
+    
     
    
     
@@ -91,6 +95,7 @@ input.email{
     position: relative;
     left: 75%;
     top: -100px;
+
 }
 
 .notification-section{
@@ -98,9 +103,10 @@ input.email{
     justify-content: center;
      transition: transform 0.4s ease; /* Transición suave para el zoom */
      width: 100%;
+     
 }
 
-.notification {
+.notification { 
     background: linear-gradient(90deg,rgb(53, 33, 94), #19193C); /* Fondo degradado */
     border-radius: 10px;
     padding: 20px;
@@ -111,11 +117,12 @@ input.email{
     height: 70px;
     position: relative; /* Para posicionar el icono */
     margin-bottom: 20px; /* Espacio desde el fondo */
-    
+   
 }
 
 .notification:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    
 }
 
 .icon {
@@ -125,7 +132,8 @@ input.email{
     position: absolute; /* Posicionar el icono */
     left: -70px;
     top: 30%; /* Centrar verticalmente */
-    transform: translateY(-50%); /* Ajustar el centrado */
+    transform: translateY(-50%); /* Ajustar el centrado */ 
+    
 }
 
 .message {
@@ -135,9 +143,11 @@ input.email{
 .message h2 {
     margin: 0;
     font-size: 18px;
+    
 }
 
 .message p {
+    
     padding: 0%;
     font-size: 14px;
 }
@@ -171,8 +181,9 @@ img{
     left: -15px;
      position: absolute;
     bottom: 8px;   
-    color: black;
+    color: white;
     font-weight: bold;
+
     
 }
 
@@ -187,7 +198,6 @@ width: 90%;
     transition: transform 0.3s;
     display: flex;
     padding: 10px;
- 
     align-content: space-evenly;
 
 }
@@ -231,9 +241,11 @@ width: 90%;
 .card-text h3 {
   font-size: 25px;
   margin-bottom: 10px;
+  
 }
 
 .card-text p {
+    
   font-size: 14px;
   line-height: 1.4;
 }
@@ -251,62 +263,129 @@ width: 90%;
 #faq-section {
     display: flex;
     flex-direction: column; 
-    padding: 60px 20px;
     width: 90vw;
-    gap: 0;
+    gap: 0px;
 
 }
-
-
-
-.faq-question {
- background-color: rgb(65, 65, 65);
-  padding: 20px;
-  margin: 0;
- cursor: pointer; 
-  height: 80px;
-  
-  
-}
-.faq-question:hover{
-    background-color: rgb(91, 91, 91);
-    transition: 0.3s;
-}
-.faq-header h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: violet;
-
-}
-.faq-item h3 {
-    font-size: 25px;
-  line-height: 1.4;
-  color:white;
-}
-.faq-answer {
-    display: none;
-  font-size: 14px;
-  color: white;
-  width: 90vw;
-  height:100px;
- background-color: aqua;
-  
-}
-.material-icons-outlined{
+.faq-item {
+   margin: 0px ;
+    border-radius: 5px;
+    overflow: hidden; /* Para que el contenido no se desborde */
     
-  position: relative;
-    left: 96.5%;
-    top: -45px;
-    color: white;
     
+}
+
+.faq-section {
+    height: 80px;        
+    max-width: 80%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  
+}
+
+.faq-item {
+    background-color: #787777; 
+    border: 1px solid #444;
+    margin: 3px;
+    cursor: pointer;
+
    
-  
     
 }
-/* Footer */
+.faq-item:hover {
+    background-color: #666;
+     transition: background-color 0.3s ease;
+}
 
+.faq-question h3 {
 
+ 
+ 
+  
+}
+.material-icons-outlined {
+  position: relative;
+  left: 95%;
+  top: -10px;
+}
 
+.faq-answer {
+  display: none;
+  margin-top: 0.5rem;
+  color: #bbb;
+}
 
+.questionContact {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.questionContact input[type="email"] {
+    position: relative;
+    right: 20%;
+  padding: 1rem;
+  font-size: 16px;
+  width: 590px;
+  height: 60px;
+  margin: 20px;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  background: transparent;
+  
+ 
+}
 
+.button-dow[type="button"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #e50914;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  top: -80px;
+  left: 78%;
+}
+#icon-button {
+  position: relative;
+  left: 3%;
+    top: -0%;
+  
+}
+footer {
+ 
+  color: #888;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+footer ul {
+  list-style: none;
+  padding: 20px;
+  column-count: 4;
+  column-gap: 100px;
+  
+  
+  
+}
+
+footer ul li {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
