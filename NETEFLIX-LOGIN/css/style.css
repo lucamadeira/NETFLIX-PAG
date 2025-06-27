@@ -199,11 +199,7 @@ width: 90%;
 
 
 
-
-
-
-
-
+/* modidificazione container section cards */
 .benefits-section {
   padding: 60px 20px;
   max-width: 1800px;
@@ -221,7 +217,7 @@ width: 90%;
   flex-flow: row;
   gap: 20px;
 }
-
+/* modificazione di cards */
 .card {
   background: linear-gradient(to bottom, #2d0b41, #0f051e);
   border-radius: 16px;
@@ -251,46 +247,66 @@ width: 90%;
   width: 32px;
   height: 32px;
 }
-
-    
-
-.a{
-  display: flex;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0);
-    border: 1px solid rgba(128, 128, 128, 0);
-    border-radius: 5px;
-    width: 120px;
-    height: 40px;
-    padding: 10px;
-   
+/* modificafopne FAQ-section  */
+#faq-section {
+    display: flex;
+    flex-direction: column; 
+    padding: 60px 20px;
+    width: 90vw;
+    gap: 0;
 
 }
 
 
-#pbig{
+
+.faq-question {
+ background-color: rgb(65, 65, 65);
+  padding: 20px;
+  margin: 0;
+ cursor: pointer; 
+  height: 80px;
+  
+  
+}
+.faq-question:hover{
+    background-color: rgb(91, 91, 91);
+    transition: 0.3s;
+}
+.faq-header h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: violet;
+
+}
+.faq-item h3 {
     font-size: 25px;
-    font-family: netflix;
+  line-height: 1.4;
+  color:white;
 }
-div > .pcolor{
-    color:rgb(187, 186, 195);
-    font-family: pbig;
+.faq-answer {
+    display: none;
+  font-size: 14px;
+  color: white;
+  width: 90vw;
+  height:100px;
+ background-color: aqua;
+  
+}
+.material-icons-outlined{
+    
+  position: relative;
+    left: 96.5%;
+    top: -45px;
+    color: white;
+    
+   
+  
     
 }
-div > p  {
-  display: flex;
-  flex-flow: column;
-  border: 1px solid gray;
-  font-size: 20px;
-  text-decoration: none;
-    width: 80vw;
-    height: 80px;
-    background-color: rgba(60, 60, 60, 0.731);
-    padding: 30px;
-    
-    
-}
-div > p > a:hover{
-    background-color: rgba(70, 70, 70, 0.578);
-}
+/* Footer */
+
+
+
+
+
+
