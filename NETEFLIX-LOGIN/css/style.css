@@ -40,7 +40,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
     overflow-x: hidden;
    height: 100vh;
    width: 100vw;
@@ -50,7 +50,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 250px;
+  padding: 5px 100px;
   background-color: #000000a3;
   box-shadow: 0 20px 16px 0 rgba(0,0,0,0.5); 
   
@@ -63,36 +63,52 @@ header {
 }
 .buttonAccedi{
   position: relative;
-  left: 140px;
-  top: -15px;
-  background-color: red;
-  text-align: center;
+  right: 50px;
+  top: -10px;
+  background-color: rgba(255, 0, 0, 0.87);
   width: 80px;
-  height: 35px;
+  height: 30px;
+  border: 1px solid  rgba(255, 0, 0, 0.87);
   border-radius: 5px;
-  font-family: netflix-bold;
+  
+}
+.buttonAccedi > a{
+  position: relative;
+ text-decoration: none;
+ font-family: netflix-bold;
+ left: 20%;
+ top: 15%;
+ font-size: 14px;
 }
 .buttonAccedi:hover{
-  background-color: rgba(255, 0, 0, 0.56);
+  background-color: rgba(255, 0, 0, 0.679);
 }
 .language-wrapper {
   position: relative;
   display: inline-block;
   font-family: Arial, sans-serif;
+  left: 32%;
+  top: -10px;
 }
 
 .language-button {
   background-color: rgba(0, 0, 0, 0.6);
-  border: 2px solid white;
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.475);
+  border-radius: 5px;
   color: white;
   font-size: 16px;
-  padding: 8px 16px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
   font-weight: 500;
+}
+.language-button.active {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 135px;
+  height: 40px;
 }
 
 .lang-icon {
@@ -109,8 +125,7 @@ header {
   position: absolute;
   top: 105%;
   left: 0;
-  background-color: #000;
-  border: 1px solid #fff;
+  background-color: #4b4a4a8f;
   border-radius: 6px;
   list-style: none;
   padding: 0;

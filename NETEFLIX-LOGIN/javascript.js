@@ -28,6 +28,17 @@ window.addEventListener('click', function (e) {
   }
 });
 
+const btn = document.querySelector('.language-button');
+document.addEventListener('click', function(e) {
+  // Fecha se clicar fora
+  if (!btn.contains(e.target)) {
+    btn.classList.remove('active');
+  }
+});
+btn.addEventListener('click', function(e) {
+  e.stopPropagation();
+  btn.classList.toggle('active');
+});
 
 
 
