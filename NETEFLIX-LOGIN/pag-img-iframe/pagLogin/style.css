@@ -1,0 +1,177 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../img-netflix/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    }
+
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 250px;
+        
+     }
+    .Netfliximg img {
+    width: 200px;   
+    height: auto;
+    display: block;
+    }
+
+    
+
+    .login-container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 60px 68px 40px;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin-top: 40px;
+      border-radius: 4px;
+    }
+
+    .login-container h1 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 16px;
+      margin: 10px 0;
+      background: #333;
+      border: none;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .login-container input.invalid {
+      border: 1px solid #e80303;
+    }
+
+    .login-container .error {
+      color: #e80303;
+      font-size: 13px;
+      margin-top: -8px;
+      margin-bottom: 10px;
+      display: none;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .login-container .error::before {
+      content: "✖";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #e80303;
+      font-size: 14px;
+    }
+
+    .btn-red {
+      background: #e50914;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 4px;
+      margin: 16px 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .separator {
+      text-align: center;
+      color: gray;
+      margin: 18px 0 10px;
+    }
+
+    .code-btn {
+      background: #333;
+      color: white;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .forgot-password a {
+      color: white;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .login-footer p {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+
+    .login-footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 5%;
+    padding: 100px  ;
+    height: 300px;
+    display: flex;
+    justify-content:space-evenly ;
+    }
+
+    .footer-section {
+        position: relative;
+        left: -5%;
+        margin: -10px 10px;  
+    }
+    .footer-section p {
+    margin-bottom: 20px;
+    }
+    
+
+    .footer-link {
+        color: #ffffff73;
+        
+    }
+    .linkDomanda{
+        text-decoration: none;
+        color:  #ffffff73;
+        
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }

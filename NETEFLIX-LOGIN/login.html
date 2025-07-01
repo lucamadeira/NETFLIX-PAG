@@ -17,8 +17,25 @@
          <!--  tenho que arrumar as dimensoes de telas  -->
            <!--  -->
    <header>
-    <div class="Netfliximg"><img style="width: 150px;height: 200px;" src="img-netflix/netflix-2-logo-png-transparent-3222310419.png" alt="netflix"></div>
-    <div ><button class="buttonAccedi">Accedi</button></div>
+      <div class="Netfliximg"><img src="img-netflix/Netflix_Logo_PMS.png"netflix></div> 
+    
+        <div class="language-wrapper">
+        <button class="language-button" onclick="toggleDropdown()">
+            <span class="lang-icon">🌐</span>
+            <span class="lang-text">Italiano</span>
+            <span class="arrow">▼</span>
+        </button>
+
+        <ul class="language-dropdown" id="lang-dropdown">
+            <li onclick="selectLanguage('Português')">Português</li>
+            <li onclick="selectLanguage('English')">English</li>
+            <li onclick="selectLanguage('Español')">Español</li>
+            <li onclick="selectLanguage('Italiano')">Italiano</li>
+        </ul>
+        </div>
+
+    
+      <div><a class="buttonAccedi" href="pag-img-iframe/pagLogin/pagLogin.html">envia</a></div>
    </header>
 
     <body>
