@@ -350,6 +350,7 @@ display: flex;
 overflow-x: auto;
 overflow-y: hidden;
 width: 90%;
+gap: 20px;
 
 }
 .flex-img{
@@ -364,10 +365,32 @@ width: 90%;
     /* ao passar o mouse */
     transform: scale(1.05);
 }
+.madal > h2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-
-.modal1{
+.modal {
   display: none;
+  position: fixed;      /* cobre a tela toda */
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7); /* fundo escuro semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #2222228b;
+  padding: 32px;
+  border-radius: 12px;
+  position: relative;
+  max-width: 40vw;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 
