@@ -348,6 +348,7 @@ img{
 div#top10{
 display: flex;
 overflow-x: auto;
+overflow-y: hidden;
 width: 90%;
 
 }
@@ -364,6 +365,10 @@ width: 90%;
     transform: scale(1.05);
 }
 
+
+.modal1{
+  display: none;
+}
 
 
 

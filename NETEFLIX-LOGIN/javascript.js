@@ -40,6 +40,6 @@ btn.addEventListener('click', function(e) {
   btn.classList.toggle('active');
 });
 
-
+// aqui esta a funcion del model della imagens top10
 
 
