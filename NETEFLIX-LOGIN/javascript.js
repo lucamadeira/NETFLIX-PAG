@@ -7,6 +7,31 @@ document.querySelectorAll('.faq-item').forEach(item => {
     }
   });
 });
+//validation email
+
+const containerInput = document.getElementById("containerInput");
+const emailInput = document.getElementById("email");
+const buttons = document.getElementsByClassName("button-log");
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+containerInput.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const email = emailInput.value.trim();
+  emailInput.value = "";
+});
+
+
+Array.from(buttons).forEach(function(button) {
+  button.addEventListener('click', function() {
+    if (emailInput.value === '') {
+      
+      alert('Per favore mettere il tuo email.');
+    }
+  });
+});
 
 // Dropdown de idioma
 function toggleDropdown() {

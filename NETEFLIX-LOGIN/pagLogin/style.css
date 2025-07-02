@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(../../img-netflix/Background.jpg);
+        url(../img-netflix/Background.jpg);
     background-size: cover;
     background-position: center;
     color: white;
