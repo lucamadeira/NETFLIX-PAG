@@ -23,8 +23,6 @@
     box-sizing: border-box;
     color: white;
     font-family: netflix, sans-serif;
-    
-   
 
 }
 
@@ -40,10 +38,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
     overflow-x: hidden;
    height: 100vh;
-   width: 100vw;
+   width: 100%;
    
 }
 header {
@@ -169,7 +166,7 @@ h1{
     font-family: netflix-bold;
     font-weight: medium;
 }
-.loginP{
+.loginh4{
     display: flex;
     flex-flow: column-reverse;
     justify-self: center;
@@ -663,3 +660,258 @@ align-items: center;
     margin-top: 1rem;
 }
 
+@font-face {
+    font-family: netflix;
+     src: url(../font/NetflixSans-Light.otf);
+}
+@font-face {
+    font-family: netflix-bold;
+    src: url(../font/NetflixSans_W_Bd.woff2);
+}
+@font-face {
+    font-family: netflix-P;
+    src: url(../font/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0));
+    color: white;
+    font-family: netflix, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(../img-netflix/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* El resto de tu CSS original permanece igual */
+
+/* ====================== */
+/* === MEDIA QUERIES === */
+/* ====================== */
+
+@media (max-width: 600px) {
+   
+
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .Netfliximg img {
+    position: relative;
+    right: 150%;
+    width: 140px;
+  }
+
+  .buttonAccedi {
+    left: 40%;
+    top: -95px;
+    width: 80px;
+  }
+
+  .language-wrapper {
+    left: 22%;
+    top: -55px;
+     
+  }
+
+  .conteinerlogin {
+    width: 90%;
+    flex-direction: column;
+  }
+  .loginh4{
+    width: 400px;
+  }
+  
+
+  input#email {
+    width: 90%;
+    left: 0;
+  }
+
+  .button-container {
+    left: 85%;
+    transform: translateX(-50%);
+    top: 0;
+  
+  }
+
+  .notification {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    height: auto;
+    text-align: center;
+  }
+
+  .icon {
+    position: static;
+    margin: 0 auto 10px auto;
+  }
+
+  .containerTop10 {
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .titoli10p {
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+
+  div#top10 {
+    padding: 0 10px;
+  }
+
+  .modal-content {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 20px;
+  }
+  iframe{
+    width: 350px;
+  }
+
+  .cads-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cards-container {
+    flex-flow: wrap;
+    align-items: center;
+  }
+  .titleCatds{ 
+    position: relative;
+    left: 25%;
+  }
+
+  .card {
+    margin: auto;
+    width: 40%;
+  }
+
+  .faq-container {
+    max-width: 100%;
+  }
+  .section-title{
+    margin-bottom: 20px;
+  }
+
+  .questionContact input[type="email"] {
+    width: 90%;
+    margin: 10px 0;
+    right: 0;
+  }
+
+  .button-dow[type="button"] {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    margin-top: 10px;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  header {
+    padding: 10px 40px;
+  }
+
+  .Netfliximg img {
+    width: 160px;
+  }
+
+  .buttonAccedi {
+    position: relative;
+    right: 10px;
+  }
+
+  .language-wrapper {
+    position: absolute;
+    left: 80%;
+  }
+
+  .conteinerlogin {
+    width: 70%;
+  }
+
+  input#email {
+    width: 85%;
+  }
+
+  .button-container {
+    left: 60%;
+    top: -50px;
+  }
+
+  .notification {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    left: -50px;
+  }
+
+  .containerTop10 {
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .questionContact input[type="email"] {
+    width: 80%;
+    right: 0;
+  }
+
+  .button-dow[type="button"] {
+    left: 60%;
+    top: -60px;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .containerTop10 {
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .card {
+    width: 280px;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
