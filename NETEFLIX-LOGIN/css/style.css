@@ -141,12 +141,9 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-
-
 h1{
     text-align: center;
     font-size: 56px;
-  
     font-family: netflix-bold;
     
 }
@@ -168,15 +165,13 @@ h1{
 }
 .loginh4{
     display: flex;
-    flex-flow: column-reverse;
-    justify-self: center;
+    flex-flow: column wrap;
+    align-items: center;
     padding: 10px;
     font-family: netflix, sans-serif;
     font-size: 16px;
     font-weight: medium;
     
-    
-   
     
 }
 
@@ -192,9 +187,6 @@ input#email{
     font-family: netflix;
     font-size: medium;
     margin: 20px;
-
-    
-   
 }
 .button-log {
     display: flex;
@@ -208,7 +200,7 @@ input#email{
     font-size: 25px;
     border-radius: 5px;
     margin-top: 20px;
-     margin-right: 0%;
+    
     
 
 }
@@ -227,44 +219,45 @@ input#email{
     left: 3%;
     top: -0%;
     color: white;
+    font-size: 35px;
 }
 
 .notification-section{
     display: flex;
     justify-content: center;
-     transition: transform 0.4s ease; /* Transición suave para el zoom */
+     transition: transform 0.4s ease; 
      width: 100%;
      
 }
 
 .notification { 
-    background: linear-gradient(90deg,rgba(54, 13, 87, 0.719), #200e5b95); /* Fondo degradado */
+    background: linear-gradient(90deg,rgba(54, 13, 87, 0.719), #200e5b95); 
     border-radius: 10px;
     padding: 20px;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    width: 1250px; /* Ajustar el ancho */
+    width: 1250px; 
     height: 80px;
-    position: relative; /* Para posicionar el icono */
+    position: relative; 
     margin-top: -5%;
     
    
 }
 
 .notification:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.05); 
     
 }
 
 .icon {
     
-    font-size: 50px; /* Tamaño del icono */
+    font-size: 50px; 
     margin-right: 15px;
-    position: absolute; /* Posicionar el icono */
+    position: absolute; 
     left: -70px;
-    top: 30%; /* Centrar verticalmente */
-    transform: translateY(-50%); /* Ajustar el centrado */ 
+    top: 30%;
+    transform: translateY(-50%); 
     
 }
 
@@ -359,9 +352,9 @@ gap: 20px;
 
 }
 .flex-img:hover{
-    /* ao passar o mouse */
     transform: scale(1.05);
 }
+
 .madal > h2{
 display: flex;
 justify-content: center;
@@ -370,18 +363,18 @@ align-items: center;
 
 .modal {
   display: none;
-  position: fixed;      /* cobre a tela toda */
+  position: fixed;      
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.7); /* fundo escuro semi-transparente */
+  background: rgba(0,0,0,0.7); 
   justify-content: center;
   align-items: center;
 }
 .modal-content {
-  background: #222222c8;
+  background: #00000083;
   padding: 32px;
   border-radius: 12px;
   position: relative;
@@ -403,10 +396,11 @@ align-items: center;
 
 
 /* modidificazione container section cards */
+
 .titleCatds {
  position: relative;
  left: 10%;
- bottom: -5%;
+ top: 40px;
  font-family: netflix-bold;
 }
 .cads-section {
@@ -421,9 +415,11 @@ align-items: center;
 .cards-container {
   display: flex;
   gap: 20px;
+ 
+} 
 
-}
 /* modificazione di cards */
+
 .card {
   background: linear-gradient(to bottom, #2d0b41, #0f051e);
   border-radius: 16px;
@@ -454,7 +450,16 @@ align-items: center;
   width: 32px;
   height: 32px;
 }
+.icons-Cards{
+  position: relative;
+  left: 70%;
+  top: 40px;
+  height: 80px;
+}
+
 /* --- Reasons Section --- */
+
+
 .reasons-section {
     padding: 2.5rem 1rem;
     text-align: center;
@@ -462,7 +467,7 @@ align-items: center;
 
 .cards-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr; 
     gap: 1.5rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -472,7 +477,7 @@ align-items: center;
     background-color: #1a1a1a;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    text-align: left; /* Align text left within cards */
+    text-align: left; 
 }
 
 .card-title {
@@ -498,6 +503,7 @@ align-items: center;
 }
 
 .section-title{
+  margin-bottom: 20px;
   font-family: netflix-bold;
 }
 .faq-item {
@@ -515,7 +521,7 @@ align-items: center;
     padding: 1rem 1.25rem;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem; /* Adjust for mobile */
+    font-size: 1.1rem; 
     text-align: left;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
@@ -543,8 +549,8 @@ align-items: center;
     padding: 1.25rem;
     padding-top: 0;
     text-align: left;
-    border-top: 1px solid #000; /* Visual separator */
-    font-size: 1rem; /* Adjust for mobile */
+    border-top: 1px solid #000; 
+    font-size: 1rem; 
 }
 .material-icons-outlined {
   position: relative;
@@ -587,6 +593,7 @@ align-items: center;
   position: relative;
   background-color: #e50914;
   color: white;
+  font-family: netflix-bold;
   width: 150px;
   height: 55px;
   border: none;
@@ -610,7 +617,7 @@ align-items: center;
     padding: 2.5rem 1rem;
     background-color: rgba(0,0,0,0.9);
     color: #737373;
-    font-size: 0.9rem; /* Adjust for mobile */
+    font-size: 0.9rem;
     columns: 1;
 }
 
@@ -631,8 +638,8 @@ align-items: center;
 
 .footer-links-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 columns on mobile */
-    gap: 0.8rem; /* Smaller gap for mobile */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0.8rem; 
     list-style: none;
     max-width: 900px;
     margin: 0 auto 1.5rem auto;
@@ -651,7 +658,7 @@ align-items: center;
 
 .footer-language-selector {
     margin: 1.5rem auto;
-    width: fit-content; /* Adjust width to content */
+    width: fit-content; 
 }
 
 .netflix-country {
@@ -692,43 +699,40 @@ body {
     height: 100vh;
 }
 
-/* El resto de tu CSS original permanece igual */
 
-/* ====================== */
-/* === MEDIA QUERIES === */
-/* ====================== */
 
 @media (max-width: 600px) {
-   
-
-  header {
-    flex-direction: column;
-    padding: 10px 20px;
-    gap: 10px;
-  }
 
   .Netfliximg img {
     position: relative;
-    right: 150%;
+    right: 80px;
     width: 140px;
   }
 
-  .buttonAccedi {
-    left: 40%;
-    top: -95px;
-    width: 80px;
+  .buttonAccedi  {
+    left: 60px;
+    top: 3px;
+
   }
 
   .language-wrapper {
-    left: 22%;
-    top: -55px;
-     
+   display: none;
+    
   }
 
   .conteinerlogin {
     width: 90%;
     flex-direction: column;
   }
+  .conteinerlogin h1 {
+    font-size: 35px;
+    margin-top: 40%;
+  }
+  .conteinerlogin h2,
+  .conteinerlogin .netlog-p {
+    font-size: 10px;
+  }
+
   .loginh4{
     width: 400px;
   }
@@ -769,18 +773,27 @@ body {
     margin: 20px 0 10px 0;
     text-align: center;
   }
+  img{
+    width: 150px;
+    
+  }
 
   div#top10 {
-    padding: 0 10px;
+   background-color: #00000087;
+   box-shadow: 0 20px 16px 0 rgba(0,0,0,0.5); 
+   height: 220px;
   }
 
   .modal-content {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 500px;
     padding: 20px;
+    overflow: hidden;
+    background-color: #00000083;
   }
   iframe{
-    width: 350px;
+    width: 450px;
+   
   }
 
   .cads-section {
@@ -789,17 +802,18 @@ body {
   }
 
   .cards-container {
-    flex-flow: wrap;
+    flex-direction: column;
     align-items: center;
   }
   .titleCatds{ 
     position: relative;
-    left: 25%;
+    left: 15%;
+    margin: 20px;
   }
 
   .card {
     margin: auto;
-    width: 40%;
+    width: 90%;
   }
 
   .faq-container {
@@ -839,41 +853,58 @@ body {
 
   .buttonAccedi {
     position: relative;
-    right: 10px;
+   top: 2%;
   }
 
   .language-wrapper {
-    position: absolute;
-    left: 80%;
+    position: relative;
+    top: -3px;
+    left: 150px;
   }
+    
 
   .conteinerlogin {
     width: 70%;
   }
 
   input#email {
-    width: 85%;
+  left: -50px;
+    width: 80%;
   }
 
   .button-container {
-    left: 60%;
-    top: -50px;
+    left: 78%;
+    top: -100px;
   }
 
   .notification {
-    width: 95%;
+    width: 80%;
     height: auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .icon {
     left: -50px;
   }
 
+  .titoli10p {
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+
   .containerTop10 {
-    width: 95%;
+    width: 100vw;
     left: 2.5%;
+    background-color: #00000087;
+   box-shadow: 0 20px 16px 0 rgba(0,0,0,0.5);
+    
+  }
+  .titleCatds{ 
+    position: relative;
+    left: 30%;
+    margin-top: 50px;
+   
   }
 
   .cards-container {
@@ -884,19 +915,23 @@ body {
   .card {
     width: 45%;
   }
+  .section-title{
+    margin-bottom: 20px;
+  }
 
   .questionContact input[type="email"] {
-    width: 80%;
-    right: 0;
+    width: 50%;
+    right: 95px;
+    margin: 20px;
   }
 
   .button-dow[type="button"] {
-    left: 60%;
-    top: -60px;
+    left: 65%;
   }
 
   .footer-links-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  
   }
 }
 
