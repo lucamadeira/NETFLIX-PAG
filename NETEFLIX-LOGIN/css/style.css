@@ -795,6 +795,9 @@ body {
     width: 450px;
    
   }
+  .icons-Cards{
+    width: 100px;
+  }
 
   .cads-section {
     flex-direction: column;

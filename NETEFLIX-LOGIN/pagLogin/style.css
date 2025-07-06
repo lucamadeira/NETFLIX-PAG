@@ -175,3 +175,21 @@
     .footer-link:hover {
         text-decoration: underline;
     }
+    @media (max-width: 600px){
+      body{
+        background-image: none;
+        background-color: #000000;
+      }
+      
+      .Netfliximg img {
+        position: relative;
+        right: 100px;
+      }
+      .login-container{
+        background-color: transparent;
+      }
+      .footer-section{
+       position: relative;
+       left: -40px;
+       }
+      }
