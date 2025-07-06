@@ -9,7 +9,7 @@
     <link type="image/png" sizes="16x16" rel="icon" href="favicon/icons8-netflix-office-m-32.png">
     <link type="image/png" sizes="120x120" rel="icon" href=".../icons8-netflix-color-120.png">
 
-    <title>Document</title>
+    <title data-translate="documentTitle">Document</title>
 </head>
     
          
@@ -23,15 +23,15 @@
         </button>
 
         <ul class="language-dropdown" id="lang-dropdown">
-            <li >Português</li>
-            <li >English</li>
-            <li >Español</li>
-            <li >Italiano</li>
+            <li data-lang="Português">Português</li>
+            <li data-lang="English">English</li>
+            <li data-lang="Español">Español</li>
+            <li data-lang="Italiano">Italiano</li>
         </ul>
         </div>
 
     
-      <div class="buttonAccedi"><a  href="pagLogin/pagLogin.html">Accedi</a></div>
+      <div class="buttonAccedi"><a  href="pagLogin/pagLogin.html" data-translate="signInButton">Accedi</a></div>
    </header>
 
     <body>
@@ -39,15 +39,15 @@
     
             <section class="conteinerlogin">
                 <div class="netlog">
-                    <h1>Film, serie TV e tanto altro, senza limiti</h1>
-                    <h2 style="font-size: 20px;" class="netlog-p">A partire da 6,99 €. Disdici quando vuoi.</h2>
-                    <h4 class="loginh4">Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h4>
+                    <h1 data-translate="mainTitle">Film, serie TV e tanto altro, senza limiti</h1>
+                    <h2 style="font-size: 20px;" class="netlog-p" data-translate="subtitle">A partire da 6,99 €. Disdici quando vuoi.</h2>
+                    <h4 class="loginh4" data-translate="ctaText">Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h4>
                    
 
                     <form id="containerInput">
-                        <input id="email" type="email" placeholder=" Indirizzo email">
+                        <input id="email" type="email" data-translate-placeholder="emailPlaceholder" placeholder=" Indirizzo email">
                         <div class="button-container">
-                            <button class="button-log" type="submit">
+                            <button class="button-log" type="submit" data-translate="startButton">
                                 Inizia
                                 <span id="iconButtonLogin" class="material-icons-outlined">
                                     chevron_right
@@ -63,227 +63,217 @@
             <div class="notification">
                 <div class="icon">🍿</div>
                 <div class="message">
-                    <p style="font-size: 20px; font-family: netflix-bold;">Tutto ciò che ami di Netflix a soli 6,99 €.</p>
-                    <p style="font-size: large;font-size: 16px;">Approfitta del nostro piano con pubblicità: è il più conveniente.</p>
+                    <p style="font-size: 20px; font-family: netflix-bold;" data-translate="notificationTitle">Tutto ciò che ami di Netflix a soli 6,99 €.</p>
+                    <p style="font-size: large;font-size: 16px;" data-translate="notificationText">Approfitta del nostro piano con pubblicità: è il più conveniente.</p>
                 </div>
-                <button class="close-btn">Scopri di più</button>
+                <button class="close-btn" data-translate="learnMoreButton">Scopri di più</button>
             </div>
             </section>
 
             
            <section class="containerTop10">
-                <h3 class="titoli10p">I titoli del momento</h3>
+                <h3 class="titoli10p" data-translate="trendingTitles">I titoli del momento</h3>
                 
                 <div id="top10">
-                    <!-- Top Card 1 -->
                     <div class="flex-img">
                     <img id="openModalSquidGames" src="img-top10/SquidGames.webp" alt="">
                     <p class="top0">1</p>
                     </div>
                     <div id="myModalSquidGames" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Squid Game</h2>
+                        <h2 class="modal-H2" data-translate="squidGameTitle">Squid Game</h2>
                         </div>
                         <div class="modal-body">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/i-PJFaBKjsY?si=TH_EcTseZAI8ulI5&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/i-PJFaBKjsY?si=TH_EcTseZAI8ulI5&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                             <div class="background-p-card" >
-                                <p>
+                                <p data-translate="squidGameDesc">
                                     Centinaia di individui a corto di denaro accettano uno strano invito a competere in giochi per bambini. Li attende un premio invitante, ma la posta in gioco è mortale.
                                 </p>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 2 -->
                     <div class="flex-img">
                     <img id="openModalGinnyGeorgia" src="img-top10/Ginny-Georgia.webp" alt="">
                     <p class="top1">2</p>
                     </div>
                     <div id="myModalGinnyGeorgia" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Ginny & Georgia</h2>
+                        <h2 class="modal-H2" data-translate="ginnyGeorgiaTitle">Ginny & Georgia</h2>
                         </div>
                         <div class="modal-body">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0RzxXBhaKhQ?si=t3_MpQ1T4J6kf3Ob&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0RzxXBhaKhQ?si=t3_MpQ1T4J6kf3Ob&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="ginnyGeorgiaDesc">
                                 Mamma dallo spirito libero, Georgia si trasferisce a nord insieme ai figli Ginny e Austin... ma la famiglia scopre che la via del nuovo inizio può essere accidentata.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 3 -->
                     <div class="flex-img">
                     <img id="openModalStrangerThings" src="img-top10/Titan.webp" alt="">
                     <p class="top2">3</p>
                     </div>
                     <div id="myModalStrangerThings" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Titan</h2>
+                        <h2 class="modal-H2" data-translate="titanTitle">Titan</h2>
                         </div>
                         <div class="modal-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/MmqibpfV6ak?si=jPXPpqMdlyf8U71i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="titanDesc">
                                 Il sommergibile turistico Titan di OceanGate è imploso nel 2023 durante un'immersione nelle profondità del Titanic. Questo documentario racconta come una visione audace si sia conclusa in tragedia.
                              </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 4 -->
                     <div class="flex-img">
                     <img id="openModalLaCasaDePapel" src="img-top10/You.webp" alt="">
                     <p class="top3">4</p>
                     </div>
                     <div id="myModalLaCasaDePapel" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">You</h2>
+                        <h2 class="modal-H2" data-translate="youTitle">You</h2>
                         </div>
                         <div class="modal-body">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TYeCEXeqa7o?si=aN5kheXfbdOSZkNf&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TYeCEXeqa7o?si=aN5kheXfbdOSZkNf&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="youDesc">
                                 Um grupo de criminosos realiza o maior assalto da história sob o comando do Professor.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 5 -->
                     <div class="flex-img">
                     <img id="openModalBridgerton" src="img-top10/K.o.webp" alt="">
                     <p class="top4">5</p>
                     </div>
                     <div id="myModalBridgerton" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">K.o</h2>
+                        <h2 class="modal-H2" data-translate="koTitle">K.o</h2>
                         </div>
                         <div class="modal-body">
 
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/9u1ygeWETO4?si=LbrMdIKOCJ57X52i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="koDesc">
                                 Un ex lottatore affronta una violenta banda criminale di Marsiglia per ritrovare il figlio di un avversario da lui ucciso involontariamente anni prima.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 6 -->
                     <div class="flex-img">
                     <img id="openModalMachiVeri" src="img-top10/MachiVeri.webp" alt="">
                     <p class="top5">6</p>
                     </div>
                     <div id="myModalMachiVeri" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Machi Veri</h2>
+                        <h2 class="modal-H2" data-translate="machiVeriTitle">Machi Veri</h2>
                         </div>
                         <div class="modal-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/b1EkwQyMtGE?si=sK9ZyE5N53uMFJGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="machiVeriDesc">
                                I quattro amici di lunga data Massimo, Mattia, Luigi e Riccardo si destreggiano tra relazioni, carriera e vita romantica nel mondo moderno che mette alla prova i maschi.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 7 -->
                     <div class="flex-img">
                     <img id="openModalOlympo" src="img-top10/Olympo.webp" alt="">
                     <p class="top6">7</p>
                     </div>
                     <div id="myModalOlympo" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Olympo</h2>
+                        <h2 class="modal-H2" data-translate="olympoTitle">Olympo</h2>
                         </div>
                         <div class="modal-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/qAC-Fg6i2js?si=lHdEzfkkoNK8KGwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="olympoDesc">
                                Quando una nuotatrice ha un malore in un centro sportivo ad alto rendimento, Amaia indaga sui rischi estremi che gli altri atleti corrono pur di alimentare la loro ambizione.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 8 -->
                     <div class="flex-img">
                     <img id="openModalStrawSenzaUscita" src="img-top10/StrawSenzaUscita.webp" alt="">
                     <p class="top7">8</p>
                     </div>
                     <div id="myModalStrawSenzaUscita" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Straw Senza Uscita</h2>
+                        <h2 class="modal-H2" data-translate="strawTitle">Straw Senza Uscita</h2>
                         </div>
                         <div class="modal-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/tYRnO7QXNR0?si=yFO09o5dahmsmzsJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="strawDesc">
                               Quale sarà la goccia che fa traboccare il vaso? Una brutta giornata spinge un'instancabile madre single al punto di rottura e a uno scioccante gesto di disperazione.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 9 -->
                     <div class="flex-img">
                     <img id="openModalTitan" src="img-top10/KpopDemonHunters.webp" alt="">
                     <p class="top8">9</p>
                     </div>
                     <div id="myModalTitan" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Kpop Demon Hunters</h2>
+                        <h2 class="modal-H2" data-translate="kpopTitle">Kpop Demon Hunters</h2>
                         </div>
                         <div class="modal-body">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ztkSahuuAPE?si=mhyANuHVgjeNjAji&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ztkSahuuAPE?si=mhyANuHVgjeNjAji&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="kpopDesc">
                                Quando le superstar del K-pop Rumi, Mira e Zoey non riempiono gli stadi, usano i loro poteri segreti per proteggere i fan dalle minacce soprannaturali.
                             </p>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <!-- Top Card 10 -->
                     <div class="flex-img">
                     <img id="openModalTop10" src="img-top10/IoSonoLaFineDelMundo.webp" alt="">
                     <p class="top9">10</p>
                     </div>
                     <div id="myModalTop10" class="modal">
                     <div class="modal-content">
-                        <span class="close-button">&times;</span>
+                        <span class="close-button">×</span>
                         <div class="modal-title">
-                        <h2 class="modal-H2">Io Sono La Fine Del Mondo</h2>
+                        <h2 class="modal-H2" data-translate="endOfTheWorldTitle">Io Sono La Fine Del Mondo</h2>
                         </div>
                         <div class="modal-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Bao-yGx3me4?si=K1t9099uAUmA1K_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="background-p-card">
-                            <p>
+                            <p data-translate="endOfTheWorldDesc">
                                Angelo è costretto a prendersi cura dei genitori anziani e coglie l'occasione per dare loro un assaggio delle rigide regole con cui è cresciuto.
                             </p>
                         </div>
@@ -296,7 +286,7 @@
             </section>
 
               <div>
-                  <h2 class="titleCatds">Motivi in più per abbonarsi</h2>
+                  <h2 class="titleCatds" data-translate="moreReasonsTitle">Motivi in più per abbonarsi</h2>
               </div>
 
             <section class="cads-section">
@@ -304,11 +294,10 @@
 
                 <div class="cards-container">
 
-                    <!-- Card 1 -->
                     <div class="card">
                         <div>
-                            <h3>Goditi Netflix sulla tua TV</h3>
-                            <p class="card-p">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori        Blu-ray e molti altri dispositivi.
+                            <h3 data-translate="card1Title">Goditi Netflix sulla tua TV</h3>
+                            <p class="card-p" data-translate="card1Desc">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.
                             </p>
                             <img class="icons-Cards" src="../NETEFLIX-LOGIN/icons-Cards/icons8-tv-30.png" alt="tv">
 
@@ -316,29 +305,26 @@
                     </div>
                         
 
-                    <!-- Card 2 -->
                     <div class="card">
                         <div>
-                            <h3>Scarica le tue serie da guardare offline</h3>
-                            <p class="card-p">Salva facilmente i tuoi preferiti e avrai sempre qualcosa da guardare.</p>
+                            <h3 data-translate="card2Title">Scarica le tue serie da guardare offline</h3>
+                            <p class="card-p" data-translate="card2Desc">Salva facilmente i tuoi preferiti e avrai sempre qualcosa da guardare.</p>
                         </div>
                         <img  class="icons-Cards" src="../NETEFLIX-LOGIN/icons-Cards/icons8-download-30.png" alt="Scarica">
                     </div>
 
-                    <!-- Card 3 -->
                     <div class="card">
                         <div >
-                            <h3>Guarda ovunque</h3>
-                            <p class="card-p">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
+                            <h3 data-translate="card3Title">Guarda ovunque</h3>
+                            <p class="card-p" data-translate="card3Desc">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
                         </div>
                         <img class="icons-Cards" src="../NETEFLIX-LOGIN/icons-Cards/icons8-comet-30.png" alt="cometa">
                     </div>
 
-                    <!-- Card 4 -->
                     <div class="card">
                         <div>
-                            <h3>Crea profili per bambini</h3>
-                            <p class="card-p">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+                            <h3 data-translate="card4Title">Crea profili per bambini</h3>
+                            <p class="card-p" data-translate="card4Desc">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
                         </div>
                         <img class="icons-Cards" src="../NETEFLIX-LOGIN/icons-Cards/icons8-children-30 (1).png" alt="bambini">
                     </div>
@@ -350,75 +336,75 @@
 
         <section id="faq-section" class="faq-section">
             <div class="faq-container">
-                <h2 class="section-title">Domande frequenti</h2>
+                <h2 class="section-title" data-translate="faqTitle">Domande frequenti</h2>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h3>Cos'è Netflix?</h3>
+                        <h3 data-translate="faq1Q">Cos'è Netflix?</h3>
                         
                     </button>
                     <span  class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq1A">
                             Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet. Guarda quello che vuoi, quando vuoi. Il tutto a una quota mensile ridotta. C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!
                         </p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h3>Quanto costa Netflix?</h3>
+                        <h3 data-translate="faq2Q">Quanto costa Netflix?</h3>
                       
                     </button>  
                     <span class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq2A">
                             Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming, il tutto per un importo mensile fisso. Piani da 6,99 € a 19,99 € al mese. Nessun costo aggiuntivo, nessun contratto.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" >
-                        <h3>Dove posso guardare Netflix?</h3>
+                        <h3 data-translate="faq3Q">Dove posso guardare Netflix?</h3>
                        
                     </button>
                      <span class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq3A">
                             Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix dal tuo computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta l'app Netflix, come smart TV, smartphone, tablet, lettori multimediali per streaming e console per videogiochi. Con l'app per iOS o Android puoi anche scaricare i tuoi programmi preferiti. Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza connessione a Internet. Porta Netflix sempre con te.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h3>Come posso disdire?</h3>
+                        <h3 data-translate="faq4Q">Come posso disdire?</h3>
                        
                     </button>
                      <span class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq4A">
                             Netflix è flessibile. Nessun contratto fastidioso e nessun impegno. Puoi facilmente disdire il tuo contratto online con due clic. Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h3>Cosa posso guardare su Netflix?</h3>
+                        <h3 data-translate="faq5Q">Cosa posso guardare su Netflix?</h3>
                         
                     </button>
                     <span class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq5A">
                             Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime, originali Netflix pluripremiati e tanto altro. Guarda tutto quello che vuoi, in qualsiasi momento.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h3>Netflix è adatto ai bambini?</h3>
+                        <h3 data-translate="faq6Q">Netflix è adatto ai bambini?</h3>
                         
                     </button>
                     <span class="material-icons-outlined faq-icon">add</span>
                     <div class="faq-answer">
-                        <p>
+                        <p data-translate="faq6A">
                             L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai genitori un maggiore controllo sui contenuti e ai più piccoli uno spazio dedicato dove guardare serie TV e film per tutta la famiglia. I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.
                         </p>
                     </div>
@@ -431,12 +417,12 @@
 
 
             <section class="questionContact">
-                <h4>Pronto per guardare? Inserisci la tua email per creare o riattivare il tuo abbonamento.</h4>
+                <h4 data-translate="faqInput">Pronto per guardare? Inserisci la tua email per creare o riattivare il tuo abbonamento.</h4>
 
                 <div>
-                    <input required type="email" placeholder=" Indirizzo e-mail">
+                    <input required type="email" data-translate-placeholder="faqInputPlaceholder" placeholder=" Indirizzo e-mail">
                     
-                    <button class="button-dow " type="button" >
+                    <button class="button-dow " type="button" data-translate="startButton2">
                         inizia
                         <span id="icon-button" style="font-size: 35px;" class="material-icons-outlined">
                             chevron_right
@@ -446,24 +432,24 @@
             </section>
 
             <footer class="main-footer">
-        <p class="footer-contact-text">Domande? Chiama <a href="tel:+39800100000" class="footer-link">800-100-000</a></p>
+        <p class="footer-contact-text" data-translate="footerContact">Domande? Chiama <a href="tel:+39800100000" class="footer-link">800-100-000</a></p>
         <ul class="footer-links-grid">
-            <li><a href="#" class="footer-link">Domande frequenti</a></li>
-            <li><a href="#" class="footer-link">Relazioni con gli investitori</a></li>
-            <li><a href="#" class="footer-link">Modi per guardare</a></li>
-            <li><a href="#" class="footer-link">Informazioni aziendali</a></li>
-            <li><a href="#" class="footer-link">Note legali</a></li>
-            <li><a href="#" class="footer-link">Privacy</a></li>
-            <li><a href="#" class="footer-link">Centro assistenza</a></li>
-            <li><a href="#" class="footer-link">Lavora con noi</a></li>
-            <li><a href="#" class="footer-link">Termini di utilizzo</a></li>
-            <li><a href="#" class="footer-link">Contattaci</a></li>
-            <li><a href="#" class="footer-link">Solo su Netflix</a></li>
-            <li><a href="#" class="footer-link">Account</a></li>
-            <li><a href="#" class="footer-link">Riscatta le carte regalo</a></li>
-            <li><a href="#" class="footer-link">Preferenze sui cookie</a></li>
-            <li><a href="#" class="footer-link">Test di velocità</a></li>
-            <li><a href="#" class="footer-link">Garanzia legale</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink1">Domande frequenti</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink2">Relazioni con gli investitori</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink3">Modi per guardare</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink4">Informazioni aziendali</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink5">Note legali</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink6">Privacy</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink7">Centro assistenza</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink8">Lavora con noi</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink9">Termini di utilizzo</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink10">Contattaci</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink11">Solo su Netflix</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink12">Account</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink13">Riscatta le carte regalo</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink14">Preferenze sui cookie</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink15">Test di velocità</a></li>
+            <li><a href="#" class="footer-link" data-translate="footerLink16">Garanzia legale</a></li>
         </ul>
         <div class="language-selector footer-language-selector">
             <button class="language-button" aria-label="Seleziona lingua">
@@ -478,7 +464,7 @@
                 <li data-lang="Italiano">Italiano</li>
             </ul>
         </div>
-        <p class="netflix-country">Netflix Italia</p>
+        <p class="netflix-country" data-translate="footerCountry">Netflix Italia</p>
     </footer>
     
     </body>
