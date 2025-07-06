@@ -3,66 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Login </title>
+  <title data-translate="documentTitle">Netflix Login </title>
   <link rel="stylesheet" href="style.css">
    <link type="image/png" sizes="16x16" rel="icon" href="../favicon/icons8-netflix-office-m-32.png">
 
-  
 </head>
-<header><div class="Netfliximg"><img src="../img-netflix/Netflix_Logo_PMS.png"netflix></div> </header>
+<header><div class="Netfliximg"><img src="../img-netflix/Netflix_Logo_PMS.png" alt="Netflix Logo"></div> </header>
 <body>
   <div class="overlay"></div>
 
   <div class="login-container">
-    <h1>Accedi</h1>
-    <input type="text" id="email" placeholder="Indirizzo email o numero di cellulare">
-    <div class="error" id="email-error">Inserisci un indirizzo email o numero di telefono valido.</div>
-    <input type="password" id="password" placeholder="Password">
-    <div class="error" id="password-error">La password deve avere una lunghezza compresa tra 4 e 60 caratteri.</div>
-    <button class="btn-red">Accedi</button>
+    <h1 data-translate="loginTitle">Accedi</h1>
+    <input type="text" id="email" data-translate-placeholder="emailPlaceholder" placeholder="email">
+    <div class="error" id="email-error" data-translate="emailError">Inserisci un indirizzo email o numero di telefono valido.</div>
+    <input type="password" id="password" data-translate-placeholder="passwordPlaceholder" placeholder="password">
+    <div class="error" id="password-error" data-translate="passwordError">La password deve avere una lunghezza compresa tra 4 e 60 caratteri.</div>
+    <button class="btn-red" data-translate="signInButtonLogin">Accedi</button>
 
-    <div class="separator">OPPURE</div>
-    <button class="code-btn">Usa un codice di accesso</button>
+    <div class="separator" data-translate="orSeparator">OPPURE</div>
+    <button class="code-btn" data-translate="useCodeButton">Usa un codice di accesso</button>
 
     <div class="forgot-password">
-      <a href="#">Hai dimenticato la password?</a>
+      <a href="#" data-translate="forgotPassword">Hai dimenticato la password?</a>
     </div>
 
     <div class="login-footer">
       <div class="remember">
         <input type="checkbox" id="remember" >
-        <label for="remember">Ricordami</label>
+        <label for="remember" data-translate="rememberMe">Ricordami</label>
       </div>
-      <p>Prima volta su Netflix? <a href="#">Registrati ora.</a></p>
-      <p style="font-size: 13px; font-weight: normal;">Questa pagina è protetta da Google reCAPTCHA per garantire che tu non sia un bot. <a href="#">Scopri di più.</a></p>
+      <p><span data-translate="firstTimeNetflix">Prima volta su Netflix?</span> <a href="#" data-translate="signUpNow">Registrati ora.</a></p>
+      <p style="font-size: 13px; font-weight: normal;"><span data-translate="recaptchaInfo">Questa pagina è protetta da Google reCAPTCHA per garantire che tu non sia un bot.</span> <a href="#" data-translate="learnMore">Scopri di più.</a></p>
     </div>
   </div>
 
   <footer class="footer">
     
     <div class="footer-section">
-
-        <div >
-          <p><a href="#" class="linkDomanda">Domande? Contattaci.</a></p>
+        <div>
+          <p><a href="#" class="linkDomanda" data-translate="footerQuestions">Domande? Contattaci.</a></p>
         </div>
-
-        <p><a href="#" class="footer-link">Domande frequenti</a></p>
-        <p><a href="#" class="footer-link">Preferenze per i cookie</a></p>
+        <p><a href="#" class="footer-link" data-translate="footerLink1">Domande frequenti</a></p>
+        <p><a href="#" class="footer-link" data-translate="footerLink2">Preferenze per i cookie</a></p>
     </div>
     <div class="footer-section">
-         <p><a href="#" class="footer-link">Centro assistenza</a></p>
-        <p><a href="#" class="footer-link">Informazioni sull'azienda</a></p>
+         <p><a href="#" class="footer-link" data-translate="footerLink3">Centro assistenza</a></p>
+        <p><a href="#" class="footer-link" data-translate="footerLink4">Informazioni sull'azienda</a></p>
     </div>
     <div class="footer-section">
-        <p><a href="#" class="footer-link">Condizioni di utilizzo</a></p>
-        <p><a href="#" class="footer-link">Preferenze per la pubblicità</a></p>
+        <p><a href="#" class="footer-link" data-translate="footerLink5">Condizioni di utilizzo</a></p>
+        <p><a href="#" class="footer-link" data-translate="footerLink6">Preferenze per la pubblicità</a></p>
     </div >
-
     <div class="footer-section">
-        <div><p><a href="#"class="footer-link" >Privacy</a></p></div>
+        <div><p><a href="#"class="footer-link" data-translate="footerLink7">Privacy</a></p></div>
     </div>
 </footer>
-
 
   <script src="pagLogin.js"></script>
 </body>

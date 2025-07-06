@@ -9,7 +9,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// Validazione email (rimane uguale)
+// Validazione email
 const containerInput = document.getElementById("containerInput");
 const emailInput = document.getElementById("email");
 
@@ -37,8 +37,9 @@ Array.from(allStartButtons).forEach(function (button) {
   button.addEventListener('click', function (event) {
     // Only check for the primary email input, as the second one has a different purpose
     if (emailInput && emailInput.value === '') {
-      // Use the translated alert message
-      alert(translations[document.querySelector('.lang-text').innerText].alertEmailEmpty);
+      // Usa la lingua da localStorage per il messaggio di alert
+      const currentLang = localStorage.getItem('selectedLanguage') || 'Italiano';
+      alert(translations[currentLang].alertEmailEmpty);
       event.preventDefault(); // Prevent form submission if email is empty
     }
   });
@@ -97,6 +98,7 @@ document.querySelectorAll('#lang-dropdown li').forEach(function (item) {
     dropdown.style.display = 'none';
     btn.classList.remove('active');
     traduzirPara(selectedLang);
+    localStorage.setItem('selectedLanguage', selectedLang); // Salva la lingua in localStorage
   });
 });
 
@@ -447,8 +449,7 @@ const translations = {
     card1Desc: 'Mira Netflix en televisores inteligentes, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y muchos otros dispositivos.',
     card2Title: 'Descarga tus series para verlas sin conexión',
     card2Desc: 'Guarda fácilmente tus favoritos y siempre tendrás algo que ver.',
-    card3Title: 'Mira en cualquier lugar',
-    card3Desc: 'Celular, tableta, computadora portátil y TV: elige qué usar para transmitir películas y series de TV ilimitadas.',
+    card3Title: 'Celular, tableta, computadora portátil y TV: elige qué usar para transmitir películas y series de TV ilimitadas.',
     card4Title: 'Crea perfiles para niños',
     card4Desc: 'El área de Netflix Niños, ya incluida en la suscripción, ofrece a los padres un mayor control sobre el contenido y a los más pequeños un espacio dedicado para ver series y películas aptas para toda la familia.',
     alertEmailEmpty: 'Por favor, introduce tu correo electrónico.'
@@ -479,23 +480,6 @@ function traduzirPara(lang) {
       element.placeholder = t[key];
     }
   });
-
-  // Handle specific elements that might not fit data-translate easily (e.g., dynamic content, alert messages)
-  // Update the alert message handler
-  // Store original alert for reuse if needed, or if you want to conditionally use it.
-  const originalAlert = window.alert;
-  window.alert = function(msg) {
-    // This is a simplified example. For production, consider a custom modal.
-    // The alert message is now translated based on the current language
-    const currentLang = document.querySelector('.lang-text').innerText;
-    const translatedAlert = translations[currentLang].alertEmailEmpty || msg;
-    originalAlert(translatedAlert);
-  };
-
-
-  // The original special handling for FAQ and Footer Links is generally good,
-  // but if you want to be fully generic, you'd put these into data-translate attributes.
-  // For now, I'm adapting them to use the new `t` object structure.
 
   // FAQ
   // This section assumes your HTML FAQ items match the order in your translations.faq array
@@ -551,7 +535,22 @@ function traduzirPara(lang) {
   }
 }
 
-// Traduzione iniziale in italiano quando la pagina è caricata
+// Traduzione iniziale quando la pagina è caricata (legge da localStorage)
 document.addEventListener('DOMContentLoaded', function () {
-  traduzirPara('Italiano'); // Imposta l'italiano come lingua iniziale
+  const storedLang = localStorage.getItem('selectedLanguage'); // Recupera la lingua da localStorage
+  if (storedLang) {
+    traduzirPara(storedLang); // Applica la traduzione salvata
+    // Aggiorna anche il testo visualizzato nel pulsante della lingua della homepage
+    const langTextSpan = document.querySelector('.lang-text');
+    if (langTextSpan) {
+        // Questo pezzo di codice mappa la lingua memorizzata al suo testo di visualizzazione completo
+        if (storedLang === 'Italiano') langTextSpan.innerText = 'Italiano';
+        else if (storedLang === 'Português') langTextSpan.innerText = 'Português';
+        else if (storedLang === 'English') langTextSpan.innerText = 'English';
+        else if (storedLang === 'Español') langTextSpan.innerText = 'Español';
+        // Aggiungi altri casi se hai più lingue
+    }
+  } else {
+    traduzirPara('Italiano'); // Se nessuna lingua è memorizzata, imposta l'italiano come predefinito
+  }
 });
